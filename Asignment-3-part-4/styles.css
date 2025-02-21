@@ -32,6 +32,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
   
   nav a {
@@ -48,4 +50,8 @@ body {
 
   .feature {
       width: 200px;
+  }
+
+  li {
+    display: inline;
   }
