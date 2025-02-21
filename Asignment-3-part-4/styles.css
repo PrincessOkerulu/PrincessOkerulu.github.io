@@ -21,6 +21,9 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
   }
   
   nav {
@@ -46,23 +49,21 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
   }
 
   .feature {
       width: 200px;
+      float: left;
+    margin-right: 20px;
   }
 
   li {
     display: inline;
   }
 
-  .feature {
-    float: left;
-    margin-right: 20px;
-  }
+  
 
-  .photos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-  }
+  
