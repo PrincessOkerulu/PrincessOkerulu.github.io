@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Noto Serif';
-  src: url('../src/NotoSerif.woff2') format('woff2'),
-      url('../src/NotoSerif.woff') format('woff');
+  src: url('src/NotoSerif.woff2') format('woff2'),
+      url('src/NotoSerif.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url('../src/Lato-Regular.woff2') format('woff2'),
-      url('../src/Lato-Regular.woff') format('woff');
+  src: url('src/Lato-Regular.woff2') format('woff2'),
+      url('src/Lato-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -63,6 +63,7 @@ header, footer {
 /* WRITE YOUR CODE BELOW HERE */
 
 h1, h2 {
+  font-size: 3rem;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   text-align: left;
@@ -95,7 +96,7 @@ a {
 }
 
 a:link {
-  color: #1b1bb8; 
+  color: #a66; 
 }
 
 a:visited {
@@ -117,7 +118,32 @@ a:active {
 }
 
 a[href*="http"] {
-  background: url("icon/external-link-52.png") no-repeat 100% 0;
+  background: url("src/external-link-52.png") no-repeat 100% 0;
   background-size: 18px 18px;
   padding-right: 20px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  outline: none;
+  text-decoration: none;
+  border: 1px solid #a66;
+  padding: 2px;
+  display: block;
+  width: 80%;
+  padding: 20%, 15%;
+  text-align: center;
+  margin-bottom: 10%;
+  line-height: 2;
 }
