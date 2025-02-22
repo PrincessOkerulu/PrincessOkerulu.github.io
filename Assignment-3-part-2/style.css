@@ -2,5 +2,16 @@ html {
     font-family: sans-serif;
   }
   
-  /* Your CSS below here */
-  
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: white;
+    line-height: 12;
+    font-size: 1.063;
+    text-shadow: 1px 1px 1px black;
+}
