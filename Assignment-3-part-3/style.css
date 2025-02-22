@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Noto Serif';
+  src: url('../src/NotoSerif.woff2') format('woff2'),
+      url('../src/NotoSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../src/Lato-Regular.woff2') format('woff2'),
+      url('../src/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* General setup */
 
 * {
@@ -43,3 +61,7 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+body {
+  font-family: 'Noto Serif', serif;
+}
