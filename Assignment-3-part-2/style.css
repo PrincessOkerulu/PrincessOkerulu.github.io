@@ -15,4 +15,7 @@ div {
     line-height: 12;
     font-size: 1.063;
     text-shadow: 1px 1px 1px black;
+    border: 1px solid darkred;
+    background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+    box-shadow: 4px 4px 5px black, inset 4px 4px 5px rgb(255, 255, 255, 50%), inset -4px -4px 5px rgba(0,0,0,50%);
 }
