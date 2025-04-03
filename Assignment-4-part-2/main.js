@@ -10,16 +10,15 @@ const images = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const alts = [
-  "Closeup of a human eye", 
-  "Rock that looks like a wave", 
-  "Purple and white pansies", 
-  "Section of wall from a pharaoh's tomb", 
-  "Large moth on a leaf"
+  "human eye", 
+  "Rock", 
+  "Purple flowers", 
+  "wall of pharaoh's tomb", 
+  "butterfly on a leaf"
 ];
 
 /* Looping through images */
 images.forEach((image, index) => {
-  // Use a template literal to build the path correctly:
   const imgPath = `images/${image}`;
   
   const newImage = document.createElement('img');
