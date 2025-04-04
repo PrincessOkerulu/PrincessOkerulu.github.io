@@ -6,6 +6,9 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const ballCountDisplay = document.getElementById('ballcount');
+let ballcount = 0;
+
 // function to generate random number
 
 function random(min, max) {
@@ -175,7 +178,16 @@ function loop() {
       ball.update();
       ball.collisionDetect();
     }
-  }  
+  }
+
+  let existingBalls = 0;
+for (const ball of balls) {
+  if (ball.exists) {
+    existingBalls++;
+  }
+}
+ballCount = existingBalls;
+ballCountDisplay.textContent = `Ball count: ${ballCount}`;
 
   EvilBall.draw();
   EvilBall.checkBounds();
